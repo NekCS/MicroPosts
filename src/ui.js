@@ -32,6 +32,7 @@ class UI {
         this.post.innerHTML = output;
     }
 
+    // Show Alert message
     showAlert(message, className) {
         this.clearAlert();
 
@@ -53,6 +54,7 @@ class UI {
         }, 3000);
     }
 
+    // Clear alert message
     clearAlert() {
         const currentAlert = document.querySelector('.alert');
 
@@ -64,6 +66,14 @@ class UI {
     clearFields() {
         this.titleInput.value = "";
         this.bodyInput.value = "";
+    }
+
+    // Fill form to edit
+    fillForm(data) {
+        this.titleInput.value = data.title;
+        this.bodyInput.value = data.body;
+        this.idInput.value = data.id;
+
     }
 }
 
