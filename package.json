@@ -10,7 +10,7 @@
         "build-dev": "webpack --mode development --progress --devtool source-map",
         "json:server": "json-server --watch api/db.json"
     },
-    "author": "Brad Traversy",
+    "author": "nekCS",
     "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.4.3",
